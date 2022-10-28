@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>古诗小工具</title>
+	</head>
+
+	<body>
+		<form action = "/api/first_letter_all_match" method="post">
+			<h3>选择数据集</h3>
+			<input type="hidden" id="tangshi" name="tangshi" value="False">
+			<input type="checkbox" id="tangshi" name="tangshi" value="True">
+			<label for="vehicle1"> 唐诗（57607首）</label><br>
+
+			<input type="hidden" id="songshi" name="songshi" value="False">
+			<input type="checkbox" id="songshi" name="songshi" value="True">
+			<label for="songshi"> 宋诗（254248首）</label><br>
+
+			<input type="hidden" id="songci" name="songci" value="False">
+			<input type="checkbox" id="songci" name="songci" value="True">
+			<label for="songci"> 宋词（21053首）</label>
+			<input type="hidden" id="dataset" name="dataset" value="random">
+			<br>
+			<label for="fname">随机选取</label>
+			<input type="text" id="num" name="num">首诗词<br>
+			<h3>请输入姓名首字母缩写</h3>
+				<label for="fname">姓名缩写：</label><br>
+				<input type="text" id="letters" name="letters"><br>
+				<input type="submit" value="一键生成">
+		</form>
+	</body>
+
+</html>
